@@ -304,11 +304,15 @@ def test02():
         #     Prob.add_clue(new, orient='c')
 
 def main():
-    visual = False
+    # Debug开关，详细步骤
+    visual = True
     interval = 0
 
-    vhints = [[1, 3], [1, 1, 1], [5], [1, 1], [5]]
-    hhints = [[5], [1, 1], [3, 1], [1, 1, 1], [5]]
+    # vhints = [[1, 3], [1, 1, 1], [5], [1, 1], [5]]
+    # hhints = [[5], [1, 1], [3, 1], [1, 1, 1], [5]]
+
+    vhints = [[3], [3], [1], [1, 1], [1, 1]]
+    hhints = [[0], [2, 2], [3], [2, 2], [0]]
 
     filename = "problem2.txt"
     Prob = Problem(filename)
